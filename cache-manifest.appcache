@@ -5,3 +5,4 @@ CACHE
 
 NETWORK:
 ./index.html
+./javascripts/link.js
