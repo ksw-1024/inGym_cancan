@@ -100,3 +100,52 @@
     text-decoration: none;
     background-color: #afd5f0;
 }
+
+.button19 a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    padding: 1em 2em;
+    width: 300px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #cccccc;
+    transition: 0.3s;
+}
+
+.button19 a::before {
+    content: '';
+    position: absolute;
+    top: calc(50% - 2px);
+    right: -2em;
+    transform: translateY(calc(-50% - 2px)) rotate(30deg);
+    width: 12px;
+    height: 2px;
+    background-color: #2285b1;
+    transition: 0.3s;
+}
+
+.button19 a::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -2em;
+    transform: translateY(-50%);
+    width: 70px;
+    height: 2px;
+    background-color: #2285b1;
+    transition: 0.3s;
+}
+
+.button19 a:hover {
+    text-decoration: none;
+    background-color: #bbbbbb;
+}
+
+.button19 a:hover::before,
+.button19 a:hover::after {
+    right: -2.5em;
+}

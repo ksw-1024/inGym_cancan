@@ -6,6 +6,8 @@
     src: url(../fonts/roboto/Roboto-Condensed.ttf);
     font-family: 'Corporate';
     src: url(../fonts/Corporate-Logo-Bold-ver2.ttf);
+    font-family: 'Corporate-M';
+    src: url(../fonts/Corporate-Logo-Medium-ver2.ttf);
 }
 
 
@@ -82,12 +84,34 @@ h1.title-about:after {
 }
 
 .text-box p {
-    font-family: Corporate;
+    font-family: Corporate-M;
     margin: 0;
     padding: 0;
 }
 
 .text-box h2 {
+    font-family: Corporate;
+    margin: 0;
+    padding: 0;
+}
+
+.text-box2 {
+    width: 70%;
+    max-width: 50em;
+    padding: 0.5em 1em;
+    margin: 0 auto;
+    color: #00101f;
+    background: #f3d4e6;
+    border-left: solid 10px #f578cb;
+}
+
+.text-box2 p {
+    font-family: Corporate-M;
+    margin: 0;
+    padding: 0;
+}
+
+.text-box2 h2 {
     font-family: Corporate;
     margin: 0;
     padding: 0;
