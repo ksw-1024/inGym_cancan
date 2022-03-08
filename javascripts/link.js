@@ -1,5 +1,5 @@
 function index() {
-    location.href = "./index.html?20220308-002"
+    location.href = "./index.html?20220308-003"
 }
 
 function about() {
