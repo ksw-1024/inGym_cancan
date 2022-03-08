@@ -1,8 +1,13 @@
 @charset "utf-8";
 @font-face {
-	font-family: 'BebasNeue';
-	src: url(../fonts/BebasNeue-Regular.otf);
+    font-family: 'BebasNeue';
+    src: url(../fonts/BebasNeue-Regular.otf);
+    font-family: 'Roboto';
+    src: url(../fonts/roboto/Roboto-Condensed.ttf);
+    font-family: 'Corporate';
+    src: url(../fonts/Corporate-Logo-Bold-ver2.ttf);
 }
+
 
 /*========= レイアウトのためのCSS ===============*/
 
@@ -12,28 +17,142 @@ body {
     background-repeat: repeat;
 }
 
-#center-contents{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.br::before {
+    content: "\A";
+    white-space: pre;
 }
 
-#title{
-    font-size: medium;
-	font-family: BebasNeue;
-	text-align: center;
-	width:100%;
-    height: 100vh;
+#center-contents {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
-a{
-    color: #333;
+#title {
+    font-size: xx-large;
+    font-family: Corporate;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 6px;
 }
 
-a:hover{
-     text-decoration: none;   
+h1.title-about {
+    position: relative;
+    display: inline-block;
+    height: 64px;
+    margin-left: 30px;
+    padding: 1rem 2rem 1rem 3rem;
+    color: #fff;
+    background: #f31270;
+}
+
+h1.title-about:before {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    content: '';
+    border-width: 32px 30px 32px 0;
+    border-style: solid;
+    border-color: transparent #f31270 transparent transparent;
+}
+
+h1.title-about:after {
+    position: absolute;
+    top: calc(50% - 7px);
+    left: -10px;
+    width: 14px;
+    height: 14px;
+    content: '';
+    border-radius: 50%;
+    background: #fff;
+}
+
+.text-box {
+    width: 70%;
+    max-width: 50em;
+    padding: 0.5em 1em;
+    margin: 0 auto;
+    color: #00101f;
+    background: #d4e4f3;
+    border-left: solid 10px #78b9f5;
+}
+
+.text-box p {
+    font-family: Corporate;
+    margin: 0;
+    padding: 0;
+}
+
+.text-box h2 {
+    font-family: Corporate;
+    margin: 0;
+    padding: 0;
+}
+
+#text {
+    font-family: Roboto;
+}
+
+a {
+    color: #fff;
+    text-decoration: dotted;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.animoBubble5 {
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: #fff;
+    padding: .5em 1em;
+    outline: 0;
+    border: none;
+    background-color: #f31270;
+    overflow: hidden;
+    transition: color .4s ease-in-out
+}
+
+.animoBubble5::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: #12f395;
+    transform-origin: center;
+    transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+    transition: transform .45s ease-in-out
+}
+
+.animoBubble5:hover {
+    cursor: pointer;
+    color: #fff
+}
+
+.animoBubble5:hover::before {
+    transform: translate3d(-50%, -50%, 0) scale3d(35, 35, 15)
+}
+
+.youtube {
+    max-width: 50em;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+}
+
+.youtube iframe {
+    width: 100%;
+    height: 100%;
 }
