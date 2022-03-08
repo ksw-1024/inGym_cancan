@@ -19,5 +19,5 @@ function voluntary() {
 }
 
 function credit() {
-    location.href = "./credit.html?20220308-004"
+    location.href = "./credit.html?20220308-005"
 }
