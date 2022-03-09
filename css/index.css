@@ -14,7 +14,7 @@
 /*========= レイアウトのためのCSS ===============*/
 
 body {
-    font-family: Hiragino Kaku Gothic ProN;
+    font-family: "Hiragino Kaku Gothic ProN", sans-serif;
     background-image: url(../picture/index_background.png);
     background-size: 100%, auto;
     background-repeat: repeat;
