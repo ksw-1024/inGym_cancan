@@ -11,7 +11,7 @@ function music() {
 }
 
 function schedule() {
-    location.href = "./schedule.html?20220308-005"
+    location.href = "./schedule.html?20220313-001"
 }
 
 function voluntary() {
