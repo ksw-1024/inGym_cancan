@@ -7,7 +7,7 @@ function about() {
 }
 
 function music() {
-    location.href = "./music.html?20220312-003"
+    location.href = "./music.html?20220313-001"
 }
 
 function schedule() {
