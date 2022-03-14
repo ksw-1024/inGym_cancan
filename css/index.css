@@ -2,10 +2,19 @@
 @font-face {
     font-family: 'BebasNeue';
     src: url(../fonts/BebasNeue-Regular.otf);
+}
+
+@font-face {
     font-family: 'Roboto';
     src: url(../fonts/roboto/Roboto-Condensed.ttf);
+}
+
+@font-face {
     font-family: 'Corporate';
     src: url(../fonts/Corporate-Logo-Bold-ver2.ttf);
+}
+
+@font-face {
     font-family: 'Corporate-M';
     src: url(../fonts/Corporate-Logo-Medium-ver2.ttf);
 }
